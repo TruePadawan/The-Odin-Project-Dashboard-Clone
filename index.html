@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="resources/theodinproject-mobile.svg" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Dashboard | The Odin Project</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid header-nav">
+                <a href="#" class="navbar-brand">
+                    <img src="resources/theodinproject-mobile.svg" alt="The Odin Project Logo" id="pageLogo-mobile">
+                    <img class="navbar-brand" src="resources/theodinproject.svg" alt="The Odin Project Logo"
+                        id="pageLogo">
+                </a>
+
+                <!-- SIDEBAR CODE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarHeaderImg">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-title" src="resources/theodinproject.svg" id="sidebarHeaderImg"
+                            alt="The Odin Project Logo" />
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-nav-item">
+                                <a href="#" class="active">
+                                    <img src="resources/house.svg" alt="House Icon">
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-item">
+                                <a href="#">
+                                    <img src="resources/map.svg" alt="Map Icon">
+                                    <span>All Paths</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-item">
+                                <a href="#">
+                                    <img src="resources/community.svg" alt="Chat Icon">
+                                    <span>Community</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr />
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-nav-item">
+                                <a href="#">
+                                    <img src="resources/settings.svg" alt="Settings Icon">
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-item">
+                                <a href="#">
+                                    <img src="resources/moon.svg" alt="Moon Icon">
+                                    <span>Dark Mode</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-item">
+                                <a href="#">
+                                    <img src="resources/logout.svg" alt="Logout Icon">
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF SIDEABR CODE -->
+
+                <div class="collapse navbar-collapse navbar-link-container" id="navLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-links">
+                            <a href="#">All Paths</a>
+                            <a href="#">Community</a>
+                            <a href="#" class="active">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="resources/notifications.svg" alt="Notifications Icon">
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button type="button" id="dropdownToggleBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="resources/profilePic.png" alt="Profile Image">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownToggleBtn">
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <img src="resources/settings.svg" alt="Settings Icon">
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <img src="resources/moon.svg" alt="Moon Icon">
+                                            <span>Dark Mode</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <img src="resources/logout.svg" alt="Log Out Icon">
+                                            <span>Log out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-head">
+            <h1>My Dashboard</h1>
+            <div class="dashboard-user">
+                <figure>
+                    <img src="resources/profilePic.png" alt="Profile Picture" />
+                    <figcaption>Hermes</figcaption>
+                </figure>
+                <p>Set a learning goal in your <a href="#">settings</a>.</p>
+            </div>
+        </section>
+
+        <section class="dashboard-skillprogress">
+            <h3>Skills Progress</h3>
+            <h5 style="text-align: center;">The following courses should be taken in order.</h5>
+
+            <div class="courses">
+                <div class="course">
+                    <img src="resources/intermediate-html-css.svg" alt="intermediate-html-css">
+                    <div class="course-details">
+                        <p>Intermediate HTML and CSS</p>
+                        <span>23 LESSONS</span>
+                    </div>
+                    <button>Resume</button>
+                </div>
+
+                <hr>
+                
+                <div class="course">
+                    <img src="resources/javascript.svg" alt="javascript">
+                    <div class="course-details">
+                        <p>JavaScript</p>
+                        <span>40 LESSONS</span>
+                    </div>
+                    <button>Resume</button>
+                </div>
+
+                <hr>
+
+                <div class="course">
+                    <img src="resources/advanced-html-css.svg" alt="advanced-html-css">
+                    <div class="course-details">
+                        <p>Advanced HTML and CSS</p>
+                        <span>16 LESSONS</span>
+                    </div>
+                    <button>Start</button>
+                </div>
+
+                <hr>
+
+                <div class="course">
+                    <img src="resources/nodejs.svg" alt="nodejs">
+                    <div class="course-details">
+                        <p>NodeJS</p>
+                        <span>24 LESSONS</span>
+                    </div>
+                    <button>Start</button>
+                </div>
+
+                <hr>
+
+                <div class="course">
+                    <img src="resources/getting-hired.svg" alt="getting-hired">
+                    <div class="course-details">
+                        <p>Getting Hired</p>
+                        <span>13 LESSONS</span>
+                    </div>
+                    <button>Start</button>
+                </div> 
+            </div>
+
+            <hr>
+        </section>
+
+        <section class="dashboard-project-submissions">
+            <h3>Project Submissions</h3>
+
+            <ul class="submissons-container">
+                <hr>
+                <li class="submission">
+                    <div class="name-submission">
+                        <span>
+                            <span style="color: lightgray;">0</span>
+                            <input type="checkbox">
+                        </span>
+                        <a href="#">Recipes</a>
+                    </div>
+
+                    <div class="modify-submission">
+                        <button>View Code</button>
+                        <button>Live Preview</button>
+                        <button>
+                            <img src="resources/edit-submission.svg" alt="Edit Icon">
+                        </button>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="submission">
+                    <div class="name-submission">
+                        <span>
+                            <span style="color: lightgray;">0</span>
+                            <input type="checkbox">
+                        </span>
+                        <a href="#">Landing Page</a>
+                    </div>
+
+                    <div class="modify-submission">
+                        <button>View Code</button>
+                        <button>Live Preview</button>
+                        <button>
+                            <img src="resources/edit-submission.svg" alt="Edit Icon">
+                        </button>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="submission">
+                    <div class="name-submission">
+                        <span>
+                            <span style="color: lightgray;">0</span>
+                            <input type="checkbox">
+                        </span>
+                        <a href="#">Rock Paper Scissors</a>
+                    </div>
+
+                    <div class="modify-submission">
+                        <button>View Code</button>
+                        <button>Live Preview</button>
+                        <button>
+                            <img src="resources/edit-submission.svg" alt="Edit Icon">
+                        </button>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="submission">
+                    <div class="name-submission">
+                        <span>
+                            <span style="color: lightgray;">0</span>
+                            <input type="checkbox">
+                        </span>
+                        <a href="#">Library</a>
+                    </div>
+
+                    <div class="modify-submission">
+                        <button>View Code</button>
+                        <button>Live Preview</button>
+                        <button>
+                            <img src="resources/edit-submission.svg" alt="Edit Icon">
+                        </button>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="submission">
+                    <div class="name-submission">
+                        <span>
+                            <span style="color: lightgray;">0</span>
+                            <input type="checkbox">
+                        </span>
+                        <a href="#">Tic Tac Toe</a>
+                    </div>
+
+                    <div class="modify-submission">
+                        <button>View Code</button>
+                        <button>Live Preview</button>
+                        <button>
+                            <img src="resources/edit-submission.svg" alt="Edit Icon">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="dashboard-discord">
+            <h3 style="text-align: center;">Have a question?</h3>
+            <p style="text-align: center;">Chat with out friendly Odin community in out Discord chatrooms!</p>
+            <button>Open Discord</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="top">
+            <div class="about-top">
+                <img src="resources/theodinproject.svg" alt="The Odin Project Logo">
+                <p>High quality coding education created by an Open-Source community.</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://img.icons8.com/glyph-neue/64/000000/github.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/discord--v1.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="have-a-question">
+                <h3>Have a question?</h3>
+                <p>Chat with the Odin community on Discord!</p>
+                <button>Open Discord</button>
+            </div>
+        </div>
+        <div class="down">
+            <p>Web Design by Ada Chiu</p>
+
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Success Stories</a>
+                </li>
+                <li>
+                    <a href="#">Contribute</a>
+                </li>
+                <li>
+                    <a href="#">Appendix</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

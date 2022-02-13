@@ -1,0 +1,131 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem auto;
+    margin-bottom: 0;
+    max-width: 85%;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-top, .have-a-question {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-top {
+    width: 20rem;
+}
+
+.about-top > img {
+    width: max-content;
+}
+
+.about-top > p {
+    color: rgb(126, 126, 126);
+    font-size: larger;
+    padding: 20px 0;
+}
+
+.about-top ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-top > ul img {
+    width: 40px;
+    height: auto;
+}
+
+.have-a-question {
+    gap: 0.7rem;
+    padding: 2rem;
+    width: 28rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.have-a-question h3 {
+    color: rgb(55,65,81);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.have-a-question p {
+    color: rgba(55, 65, 81, 0.953);
+    font-size: large;
+}
+
+.have-a-question > button {
+    align-self: flex-start;
+    width: 13rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(55, 65, 81, 0.953);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.have-a-question > button:hover {
+    background-color: rgba(13, 14, 16, 0.953);
+}
+
+.down {
+    height: fit-content;
+    display: flex;
+}
+
+.down > p {
+    color: #cc9543;
+    height: max-content;
+}
+
+.down ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+.down ul > li {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-top > *:not(.about-top > ul ) {
+        display: none;
+    }
+
+    .about-top {
+        margin: 0 auto;
+    }
+
+    .have-a-question {
+        display: none;
+    }
+
+    .down {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .down ul {
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .down ul > li {
+        margin-left: 0;
+    }
+
+    .down > * {
+        width: 100%;
+        text-align: center;
+    }
+}

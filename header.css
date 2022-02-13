@@ -1,0 +1,143 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#pageLogo-mobile {
+    display: none;
+}
+
+.header-nav {
+    max-width: 80rem;
+}
+
+.navbar-link-container {
+    height: 69px;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav, .last-nav-items {
+    align-items: center;
+}
+
+.navbar-nav {
+    gap: 1.5rem;
+    width: max-content;
+    color: rgba(55, 65, 81, 0.693);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offcanvas {
+    transition: all 0.5s ease-in-out;
+}
+.offcanvas-body {
+    padding: 0;
+}
+
+.offcanvas-body .sidebar-nav {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5px;
+}
+
+.sidebar-nav-item {
+    width: 100%;
+}
+
+.sidebar-nav-item a {
+    border-radius: 5px;
+    padding-left: 10px;
+    color: rgb(95, 107, 126);
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.sidebar-nav-item .active {
+    background-color: rgba(217, 233, 247, 0.46);
+    color: rgb(37, 44, 56);
+}
+
+.sidebar-nav-item a:hover {
+    background-color: rgba(240, 248, 255, 0.357);
+}
+
+.offcanvas-body hr {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+
+.offcanvas-body .nav-links {
+    flex-direction: column;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item a:hover {
+    color: rgb(75, 75, 75);
+    border-bottom-color: rgb(209,213,219);
+}
+
+.nav-item > .active {
+    color: rgb(53, 53, 53);
+    border-bottom-color: rgb(163, 115, 51);
+}
+
+.nav-item button {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-item > img {
+    width: 25px;
+    height: auto;
+}
+
+.nav-item button > img {
+    box-sizing: content-box;
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.nav-item button:active > img {
+    border-color:rgb(163, 115, 51);
+}
+
+@media screen and (min-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    .offcanvas-backdrop {
+        display: none;
+    }
+}
