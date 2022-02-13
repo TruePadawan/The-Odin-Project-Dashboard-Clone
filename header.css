@@ -57,6 +57,11 @@ ul {
     width: 100%;
 }
 
+.sidebar-nav-item img {
+    width: 25px;
+    height: auto;
+}
+
 .sidebar-nav-item a {
     border-radius: 5px;
     padding-left: 10px;
