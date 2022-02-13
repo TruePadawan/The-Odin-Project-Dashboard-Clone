@@ -97,6 +97,10 @@ footer > div {
     margin-left: 50px;
 }
 
+.down a:hover {
+    color: rgb(126, 126, 126);
+}
+
 @media screen and (max-width: 1024px) {
     .about-top > *:not(.about-top > ul ) {
         display: none;
